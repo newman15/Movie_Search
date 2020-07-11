@@ -1,0 +1,27 @@
+body{
+    background-color: rgba(226, 211, 190, 0.514) !important;
+}
+
+#page-title{
+    font-family: 'Merienda One', cursive;
+}
+
+#movie-title{
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+#movie-text-results, #release-date, #cast{
+    font-family: 'Fondamento', cursive;
+}
+
+#trailer-container{
+    max-width: 600px;
+}
+
+#movie-img-results{
+    max-width: 600px;
+}
+
+#movie-table{
+    max-width: 600px;
+}

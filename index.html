@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <title>Movie Search</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Grenze+Gotisch:wght@700&family=Merienda+One&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/functions.js"></script>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="container text-center"><h1 id="page-title">Search For A Movie</h1></div>
+        </header>
+
+        <hr/>
+
+        <main>
+            <div class="container">
+
+                <form class="d-flex flex-wrap justify-content-center" id="search-movie">
+                    <input type="text" id="search-box" name="search-box" placeholder="Search By Movie Name">
+                    <button type="submit" class="btn btn-primary" id="search-btn">Search</button>
+                </form><br/>
+
+                <!-- Displays Error Message -->
+                <p class="text-center" id="text-error"></p><br/><br/>
+
+                <!-- Displays Movie Image From API -->
+                <h2 class="text-center"><span id="movie-title"></span></h2><br/>
+                <div class="container" id="movie-img-results"></div><br/><br/>
+
+                <!-- Displays Movie Text From API -->
+                <!-- <div class="text-left justify-content-center" id="movie-text-results"></div><br/><br/> -->
+
+                <!-- Displays Movie Table From API -->
+                <div class="container" id="movie-table">
+                    <div class="text-left justify-content-center">
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><span id="summary"></span></th>
+                                    <td><span id="movie-text-results"></span></td>
+                                  </tr>
+    
+                              <tr>
+                                <th scope="row"><span id="release-date-title"></span></th>
+                                <td><span id="release-date"></span></td>
+                              </tr>
+    
+                              <tr>
+                                <th scope="row"><span id="cast-title"></span></th>
+                                <td><span id="cast"></span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div><br/><br/>
+
+                <!-- Display Movie Trailer From API -->
+                <div class="container" id="trailer-container">
+                    <div class="embed-responsive embed-responsive-4by3" id="movie-trailer"></div>
+                </div><br/><br/>
+                
+            </div>
+        </main>
+
+        <hr/>
+
+        <footer>
+            <div class="container text-center">
+                <p>
+                    CST336 Internet Programming. 2020&copy; Newman<br/>
+                    <strong>Disclaimer:</strong> The information in this website
+                    is ficticious. It is used for academic purposes only.
+                </p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap Dox Requires Code Placement Here -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+</html>
